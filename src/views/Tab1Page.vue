@@ -32,7 +32,7 @@ onMounted(() => {
   console.log('mounted');
   
   const qrScanner = new QrScanner(
-      scanner.value, (result: ScanResult) => {
+      scanner.value ?? new HTMLVideoElement(), (result: ScanResult) => {
         console.log(result);
         qrScanner.stop();
 
