@@ -19,6 +19,7 @@
     "@capacitor/status-bar": "6.0.1",
     "@ionic/vue": "^8.0.0",
     "@ionic/vue-router": "^8.0.0",
+    "@types/qrcode": "^1.5.5",
     "ionicons": "^7.0.0",
     "qr-scanner": "^1.4.2",
     "qrcode": "^1.5.4",
