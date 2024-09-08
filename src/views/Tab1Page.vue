@@ -22,6 +22,7 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue
 import QrScanner from "qr-scanner";
 import {onMounted, ref} from "vue";
 import QRCode from "qrcode";
+import ScanResult = QrScanner.ScanResult;
 
 const scanner = ref(null);
 const qrcanvas = ref(null);
@@ -31,7 +32,7 @@ onMounted(() => {
   console.log('mounted');
   
   const qrScanner = new QrScanner(
-      scanner.value, (result) => {
+      scanner.value, (result: ScanResult) => {
         console.log(result);
         qrScanner.stop();
 
